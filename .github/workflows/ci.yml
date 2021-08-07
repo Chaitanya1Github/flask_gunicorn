@@ -58,3 +58,8 @@ jobs:
 
       - name: Image digest
         run: echo ${{ steps.docker_build_application.outputs.digest }}
+        
+      - name: Run tests
+        run:  |
+          echo "Im supposed to run tests here"
+          echo "Lets assume tests ran successfully"
